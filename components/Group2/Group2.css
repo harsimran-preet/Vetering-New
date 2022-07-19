@@ -1,0 +1,39 @@
+.group-5 {
+  align-items: flex-start;
+  display: flex;
+  height: 38px;
+  left: 168px;
+  min-width: 40px;
+  position: absolute;
+  top: 209px;
+}
+
+.overlap-group2-4 {
+  align-items: flex-end;
+  background-color: var(--blue-jeans-2);
+  border-radius: 7px;
+  display: flex;
+  height: 35px;
+  min-width: 40px;
+  padding: 2.8px 4px;
+}
+
+.vetering-1-6-5 {
+  height: 28px;
+  object-fit: cover;
+  width: 32px;
+}
+
+.vector-8 {
+  align-self: flex-end;
+  height: 5px;
+  margin-bottom: 0;
+  margin-left: 128px;
+  width: 40px;
+}
+
+.group-5.group-6 {
+  left: 101px;
+  top: 15px;
+}
+

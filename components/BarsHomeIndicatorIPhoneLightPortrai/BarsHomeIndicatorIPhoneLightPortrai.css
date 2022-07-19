@@ -1,0 +1,21 @@
+.bars-home-indicator {
+  align-items: flex-end;
+  display: flex;
+  height: 34px;
+  justify-content: flex-end;
+  margin-top: 20px;
+  min-width: 375px;
+  padding: 7px 119px;
+}
+
+.home-indicator {
+  background-color: var(--black);
+  border-radius: 100px;
+  height: 7px;
+  width: 136px;
+}
+
+.bars-home-indicator.bars-home-indicator-3 {
+  margin-top: 175px;
+}
+

@@ -1,0 +1,148 @@
+.x07-otp {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 812px;
+  position: relative;
+  width: 375px;
+}
+
+.group-8815 {
+  display: flex;
+  height: 26px;
+  margin-right: 115px;
+  margin-top: 53px;
+  min-width: 225px;
+}
+.center {
+  display: block;
+  margin-right: 80%;
+  width: 100%;
+}
+.overlap-group-8 {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.shape {
+  height: 14px;
+  left: 8px;
+  position: absolute;
+  top: 5px;
+  width: 8px;
+}
+
+.size {
+  cursor: pointer;
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 24px;
+}
+
+.otp-code {
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-left: 79px;
+  min-height: 26px;
+  text-align: center;
+  white-space: nowrap;
+  width: 120px;
+}
+
+.undraw_message_sent_1030-1 {
+  height: 148px;
+  margin-top: 39px;
+  width: 245px;
+}
+
+.overlap-group1-6 {
+  height: 149px;
+  margin-left: 1px;
+  margin-top: 30px;
+  position: relative;
+  width: 300px;
+}
+
+.group-8829 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 31px;
+  min-height: 149px;
+  position: absolute;
+  top: 0;
+  width: 243px;
+}
+
+.enter-otp-here {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-right: 6px;
+  min-height: 24px;
+  min-width: 101px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.otp-has-been-sent-your-mobile-number {
+  color: var(--chicago);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-s);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-right: 6px;
+  margin-top: 74px;
+  min-height: 22px;
+  min-width: 237px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.login-9 {
+  color: #ff7a79;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-right: 7px;
+  margin-top: 5px;
+  min-height: 24px;
+  min-width: 84px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.group-16-2 {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  margin-left: 2px;
+  margin-top: 261px;
+  min-width: 317px;
+}
+
+.overlap-group-9 {
+  align-items: center;
+  background-color: var(--blue-jeans);
+  border-radius: 8px;
+  display: flex;
+  height: 52px;
+  justify-content: flex-end;
+  min-width: 315px;
+  padding: 0 121px;
+}
+
+.login-10 {
+  letter-spacing: 0;
+  line-height: 24px;
+  min-height: 24px;
+  min-width: 71px;
+  text-align: center;
+  white-space: nowrap;
+}
