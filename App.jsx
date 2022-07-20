@@ -12,6 +12,7 @@ import X03SignUpPage from "./components/X03SignUpPage";
 import X10NewPost from "./components/X10NewPost";
 import X06SignUpOffender from "./components/X06SignUpOffender";
 import PostCompnent from "./components/PostComponent";
+import CardComponent from "./components/CardComponent";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
         </Route>
         <Route path="/post-component">
           <PostCompnent title="Post Component" />
+        </Route>
+        <Route path="/card-component">
+          <CardComponent title="Card Component" />
         </Route>
         <Route path="/08-verification-complete">
           <X08VerificationComplete
