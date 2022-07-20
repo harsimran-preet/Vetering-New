@@ -45,10 +45,10 @@ function App() {
         <Route path="/13-profile">
           <X13Profile {...x13ProfileData} />
         </Route>
-        <Route path="/02-sign-in">
+        <Route path="/:path(|02-sign-in)">
           <X02SignIn {...x02SignInData} />
         </Route>
-        <Route path="/:path(|01-welcome)">
+        {/* <Route path="/:path(|01-welcome)">
           <X01Welcome
             login1="I’m a Veteran"
             login2="I’m a Volunteer"
@@ -63,7 +63,7 @@ function App() {
             }
             vetering="VETERING"
           />
-        </Route>
+        </Route> */}
         <Route path="/07-otp">
           <X07OTP
             size="/img/size@2x.png"
