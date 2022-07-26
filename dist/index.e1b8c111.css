@@ -150,7 +150,6 @@ input:focus {
   width: 40px;
   align-self: flex-end;
   margin-bottom: 0;
-  margin-left: 279px;
 }
 
 .group.group-1 {
@@ -267,7 +266,7 @@ input:focus {
   line-height: 24px;
 }
 
-.x09-home {
+.x09-home-new {
   background-color: var(--white);
   align-items: flex-start;
   display: flex;
@@ -278,17 +277,17 @@ input:focus {
   min-height: 812px;
   width: 375px;
   flex-direction: column;
-  align-items: center;
-  padding: 7px 16px;
+  align-items: flex-end;
+  padding: 7px 14px;
   display: flex;
 }
 
 .flex-row {
   height: 38px;
   min-width: 207px;
-  align-self: flex-end;
   align-items: flex-start;
   margin-top: 41px;
+  margin-right: 2px;
   display: flex;
   position: relative;
 }
@@ -297,24 +296,50 @@ input:focus {
   letter-spacing: 0;
   min-height: 36px;
   min-width: 72px;
+  text-align: center;
   white-space: nowrap;
-  margin-right: 115px;
   line-height: 36px;
 }
 
-.overlap-group-1 {
+.overlap-group2 {
+  height: 243px;
+  width: 346px;
+  margin-top: 108px;
+  position: relative;
+}
+
+.vector {
+  height: 32px;
+  width: 346px;
+  position: absolute;
+  top: 211px;
+  left: 0;
+}
+
+.rectangle-2145 {
+  background-color: var(--zumthor);
+  height: 211px;
+  width: 346px;
+  border-radius: 7px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlap-group {
   background-color: var(--blue-jeans);
   height: 52px;
   min-width: 315px;
   border-radius: 8px;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 70px;
+  margin-right: 16px;
   padding: 0 125px;
   display: flex;
 }
 
-.login-1 {
+.login {
   letter-spacing: 0;
   min-height: 24px;
   min-width: 63px;
@@ -328,11 +353,11 @@ input:focus {
   min-width: 317px;
   align-items: flex-start;
   margin-top: 20px;
-  margin-left: 2px;
+  margin-right: 14px;
   display: flex;
 }
 
-.overlap-group1-1 {
+.overlap-group1 {
   background-color: var(--blue-jeans);
   height: 52px;
   min-width: 315px;
@@ -343,7 +368,7 @@ input:focus {
   display: flex;
 }
 
-.login-2 {
+.login-1 {
   letter-spacing: 0;
   min-height: 24px;
   min-width: 120px;
@@ -352,54 +377,11 @@ input:focus {
   line-height: 24px;
 }
 
-.overlap-group5 {
-  height: 240px;
-  width: 240px;
-  margin-top: 103px;
-  margin-left: 1px;
-  position: relative;
-}
-
-.overlap-group2-1 {
-  height: 240px;
-  width: 240px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.vector-5 {
-  height: 32px;
-  width: 240px;
-  position: absolute;
-  top: 208px;
-  left: 0;
-}
-
-.rectangle-2145 {
-  background-color: var(--zumthor);
-  height: 209px;
-  width: 240px;
-  border-radius: 7px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.vetering-1-5 {
-  height: 162px;
-  object-fit: cover;
-  width: 186px;
-  position: absolute;
-  top: 23px;
-  left: 27px;
-}
-
 .group-container {
   min-width: 316px;
   align-items: flex-start;
-  margin-top: 48px;
-  margin-left: 1px;
+  margin-top: 70px;
+  margin-right: 15px;
   display: flex;
 }
 
@@ -413,7 +395,7 @@ input:focus {
   display: flex;
 }
 
-.icon-home {
+.house-128-4 {
   height: 50px;
   object-fit: cover;
   width: 48px;
@@ -431,7 +413,7 @@ input:focus {
   display: flex;
 }
 
-.icon-plus {
+.plus-2-512-4 {
   height: 45px;
   object-fit: cover;
   width: 45px;
@@ -450,17 +432,18 @@ input:focus {
   display: flex;
 }
 
-.icon-user {
+.image-14 {
   height: 50px;
   object-fit: cover;
   width: 50px;
 }
 
-.home-indicator-4 {
+.home-indicator {
   background-color: var(--black);
   height: 7px;
   width: 136px;
   border-radius: 100px;
+  align-self: center;
   margin-top: 20px;
   margin-left: 1px;
 }

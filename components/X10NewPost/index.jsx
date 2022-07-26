@@ -1,4 +1,10 @@
 import React from "react";
+import TextField from "@mui/material/TextField";
+import Box from "@mui/material/Box";
+import Select, { SelectChangeEvent } from "@mui/material/Select";
+import MenuItem from "@mui/material/MenuItem";
+import InputLabel from "@mui/material/InputLabel";
+import FormControl from "@mui/material/FormControl";
 import Group from "../Group";
 import Group8821 from "../Group8821";
 import Fab from "../Fab";
@@ -21,6 +27,11 @@ function X10NewPost(props) {
     group8821Props,
     fabProps,
   } = props;
+  const [age, setAge] = React.useState("");
+
+  const handleChange = (event, SelectChangeEvent) => {
+    setAge(event.target.value);
+  };
 
   return (
     <div className="container-center-horizontal">
@@ -37,34 +48,59 @@ function X10NewPost(props) {
               bordered
             />
           </div>
-          <div className="overlap-group-13">
-            <img className="vector-10" src="/img/vector-5@2x.svg" />
-            <div className="rectangle-2145-3"></div>
-            <input
-              className="job-type poppins-medium-black-14px"
-              name="jobtype_"
-              placeholder={inputPlaceholder1}
-              type={inputType1}
-            />
-          </div>
-          <div className="overlap-group2-6">
-            <img className="vector-10" src="/img/vector-9@2x.svg" />
-            <div className="rectangle-2145-4"></div>
-            <textarea
-              className="description poppins-medium-black-14px"
-              name="description_"
-              placeholder={inputPlaceholder2}
-              type={inputType2}
-            ></textarea>
-          </div>
-          <div className="overlap-group1-7">
-            <div className="rectangle-2145-3"></div>
-            <input
-              className="location poppins-medium-black-14px"
-              name="location_"
-              placeholder={inputPlaceholder3}
-              type={inputType3}
-            />
+          <div>
+            <Box
+              sx={{
+                m: 4,
+                width: 360,
+                maxWidth: "100%",
+              }}
+            >
+              <TextField
+                id="filled-basic"
+                fullWidth
+                label="Location"
+                variant="filled"
+              />
+            </Box>
+            <Box
+              sx={{
+                m: 4,
+                width: 360,
+                maxWidth: "100%",
+              }}
+            >
+              <TextField
+                id="filled-multiline-static"
+                label="Description"
+                multiline
+                rows={6}
+                fullWidth
+                defaultValue=""
+                variant="filled"
+              />
+            </Box>
+            <FormControl variant="filled" sx={{ m: 4, minWidth: 360 }}>
+              <InputLabel id="demo-simple-select-filled-label">
+                Service Select
+              </InputLabel>
+              <Select
+                labelId="demo-simple-select-filled-label"
+                id="demo-simple-select-filled"
+                value={age}
+                onChange={handleChange}
+              >
+                <MenuItem value="">
+                  <em>None</em>
+                </MenuItem>
+                <MenuItem value={10}>Landscaping</MenuItem>
+                <MenuItem value={20}>Food</MenuItem>
+                <MenuItem value={30}>Transportation</MenuItem>
+                <MenuItem value={10}>Dumpster Run</MenuItem>
+                <MenuItem value={20}>Moving</MenuItem>
+                <MenuItem value={30}>Other</MenuItem>
+              </Select>
+            </FormControl>
           </div>
           <div className="button-container">
             <Button />
