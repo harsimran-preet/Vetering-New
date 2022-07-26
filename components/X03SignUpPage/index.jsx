@@ -9,6 +9,66 @@ import BarsHomeIndicatorIPhoneLightPortrai from "../BarsHomeIndicatorIPhoneLight
 import "./X03SignUpPage.css";
 import { Avatar, Grid } from "@nextui-org/react";
 import { deepOrange, deepPurple } from "@mui/material/colors";
+import {
+  FormControlLabel,
+  FormControl,
+  FormLabel,
+  Radio,
+  RadioGroup,
+} from "@mui/material";
+
+class Showhide extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { value: "" };
+  }
+  onchange = (e) => {
+    this.setState({ value: e.target.value });
+  };
+
+  render() {
+    const { value } = this.state;
+
+    return (
+      <React.Fragment>
+        <div className="ssn">
+          <FormControl className="form-group row">
+            <FormLabel id="demo-row-radio-buttons-group-label">
+              Who are you?
+            </FormLabel>
+            <RadioGroup
+              row
+              aria-labelledby="demo-row-radio-buttons-group-label"
+              name="row-radio-buttons-group"
+            >
+              <FormControlLabel
+                control={<Radio value="1" onClick={this.onchange} />}
+                label="Veteran"
+              />
+              <FormControlLabel
+                control={<Radio value="0" onClick={this.onchange} />}
+                label="Volunteer"
+              />
+            </RadioGroup>
+          </FormControl>
+        </div>
+
+        {value === "1" && (
+          <div className="form-group column mb-3">
+            <div className="overlap-group4-2">
+              <img className="credit-card" src="/img/credit-card@2x.svg" />
+              <input
+                className="social-security-number-ssn poppins-normal-shuttle-gray-14px"
+                name="socialsecuritynumberssn"
+                placeholder="Social Security Number (SSN)"
+              />
+            </div>
+          </div>
+        )}
+      </React.Fragment>
+    );
+  }
+}
 
 function X03SignUpPage(props) {
   const {
@@ -47,23 +107,15 @@ function X03SignUpPage(props) {
             color="gradient"
             bordered
           />
-          <Fab />
+          <Fab className="fab" />
         </div>
         <SignUpInfo {...signUpInfoProps} />
         <div className="flex-row-3">
           <div className="gender poppins-normal-daintree-14px">{gender}</div>
           <Select />
         </div>
-        <div className="group-8824">
-          <div className="overlap-group4-2">
-            <img className="credit-card" src="/img/credit-card@2x.svg" />
-            <input
-              className="social-security-number-ssn poppins-normal-shuttle-gray-14px"
-              name="socialsecuritynumberssn"
-              placeholder={inputPlaceholder}
-              type={inputType}
-            />
-          </div>
+        <div className="ssn">
+          <Showhide />
         </div>
         <DatePicker />
         <Group7996

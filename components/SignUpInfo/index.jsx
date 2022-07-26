@@ -1,5 +1,10 @@
 import React from "react";
 import "./SignUpInfo.css";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormControl from "@mui/material/FormControl";
+import FormLabel from "@mui/material/FormLabel";
 
 function SignUpInfo(props) {
   const {

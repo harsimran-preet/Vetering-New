@@ -43,7 +43,7 @@ export default function App() {
           servicename="Service Name"
           date="Date (MM/DD/YYYY)"
           photo="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-          acolor="rgb(234, 247, 116)"
+          acolor="#FFED01"
         />
       </Grid>
       <Grid>
@@ -51,7 +51,7 @@ export default function App() {
           servicename="Service Name"
           date="Date (MM/DD/YYYY)"
           photo="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-          acolor="rgb(247, 116, 116)"
+          acolor="rgb(30, 215, 96)"
         />
       </Grid>
       <Grid>

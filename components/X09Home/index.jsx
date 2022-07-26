@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Group from "../Group";
 import "./X09HomeNew.css";
+import CardComp from "../CardComponent";
 
 function X09HomeNew(props) {
   const { place, login1, login2, iconHome, iconPlus, iconUser } = props;
@@ -18,7 +19,9 @@ function X09HomeNew(props) {
               className="vector"
               src="https://anima-uploads.s3.amazonaws.com/projects/62cd646071a28706a8329171/releases/62dfa44597ebd2806a39c94c/img/vector-4@2x.svg"
             />
-            <div className="rectangle-2145"></div>
+            <div className="rectangle-2145">
+              <CardComp />
+            </div>
           </div>
           <div className="overlap-group">
             <div className="login poppins-medium-white-14px">{login1}</div>

@@ -318,7 +318,7 @@ input:focus {
 
 .rectangle-2145 {
   background-color: var(--zumthor);
-  height: 211px;
+  height: 258px;
   width: 346px;
   border-radius: 7px;
   position: absolute;
@@ -12824,7 +12824,7 @@ textarea.form-control-lg {
   height: 24px;
   letter-spacing: 0;
   white-space: nowrap;
-  width: 74px;
+  width: 250px;
   background-color: #0000;
   border: 0;
   margin-left: 15px;
@@ -12847,23 +12847,11 @@ textarea.form-control-lg {
   display: flex;
 }
 
-.last-name {
+.last-name, .email-address {
   height: 24px;
   letter-spacing: 0;
   white-space: nowrap;
-  width: 73px;
-  background-color: #0000;
-  border: 0;
-  margin-left: 15px;
-  padding: 0;
-  line-height: 24px;
-}
-
-.email-address {
-  height: 24px;
-  letter-spacing: 0;
-  white-space: nowrap;
-  width: 98px;
+  width: 250px;
   background-color: #0000;
   border: 0;
   margin-left: 15px;
@@ -12891,7 +12879,7 @@ textarea.form-control-lg {
   height: 24px;
   letter-spacing: 0;
   white-space: nowrap;
-  width: 106px;
+  width: 250px;
   background-color: #0000;
   border: 0;
   margin-left: 14px;
@@ -73066,6 +73054,10 @@ html {
   display: flex;
 }
 
+.ssn {
+  margin-top: 10px;
+}
+
 .overlap-group-10 {
   height: 24px;
   width: 24px;
@@ -73242,6 +73234,11 @@ html {
   color: #6f7c90;
 }
 
+.fab {
+  margin-top: -30px;
+  margin-left: 50px;
+}
+
 .sign-in-1 {
   cursor: pointer;
   letter-spacing: 0;
@@ -73250,7 +73247,7 @@ html {
   line-height: 24px;
   position: absolute;
   top: 0;
-  left: 120px;
+  left: 117px;
 }
 
 .button {

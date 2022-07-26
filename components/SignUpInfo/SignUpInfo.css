@@ -31,7 +31,7 @@
   margin-left: 15px;
   padding: 0;
   white-space: nowrap;
-  width: 74px;
+  width: 250px;
 }
 
 .first-name::placeholder,
@@ -61,7 +61,7 @@
   margin-left: 15px;
   padding: 0;
   white-space: nowrap;
-  width: 73px;
+  width: 250px;
 }
 
 .email-address {
@@ -73,7 +73,7 @@
   margin-left: 15px;
   padding: 0;
   white-space: nowrap;
-  width: 98px;
+  width: 250px;
 }
 
 .overlap-group3-5 {
@@ -101,6 +101,5 @@
   margin-left: 14px;
   padding: 0;
   white-space: nowrap;
-  width: 106px;
+  width: 250px;
 }
-
