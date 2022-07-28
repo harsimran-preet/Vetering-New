@@ -1,2 +1,2 @@
-node_modules
-.parcel-cache
+App/node_modules
+App/.parcel-cache
