@@ -1,5 +1,5 @@
 import { Card, Grid, Text, Link } from "@nextui-org/react";
-
+import Link1 from "react-router-dom/Link";
 export default function App() {
   const Cardcomp = ({ servicename, date, photo, acolor }) => {
     return (
@@ -39,6 +39,16 @@ export default function App() {
   return (
     <Grid.Container direction="column" gap={1} justify="center">
       <Grid>
+        <Link1 to="/request-info1">
+          <Cardcomp
+            servicename="Service Name"
+            date="Date (MM/DD/YYYY)"
+            photo="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+            acolor="white"
+          />
+        </Link1>
+      </Grid>
+      <Grid>
         <Cardcomp
           servicename="Service Name"
           date="Date (MM/DD/YYYY)"
@@ -52,14 +62,6 @@ export default function App() {
           date="Date (MM/DD/YYYY)"
           photo="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
           acolor="rgb(30, 215, 96)"
-        />
-      </Grid>
-      <Grid>
-        <Cardcomp
-          servicename="Service Name"
-          date="Date (MM/DD/YYYY)"
-          photo="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-          acolor="white"
         />
       </Grid>
     </Grid.Container>

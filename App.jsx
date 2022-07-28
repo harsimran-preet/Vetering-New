@@ -13,6 +13,7 @@ import X10NewPost from "./components/X10NewPost";
 import X06SignUpOffender from "./components/X06SignUpOffender";
 import PostCompnent from "./components/PostComponent";
 import CardComponent from "./components/CardComponent";
+import RequestInfo from "./components/RequestInfo";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
       <Switch>
         <Route path="/11-reqeuest-posted">
           <X11ReqeuestPosted title="Request Posted!" login="Home" />
+        </Route>
+        <Route path="/request-info1">
+          <RequestInfo {...RequestInfoData1} />
         </Route>
         <Route path="/09-home">
           <X09Home {...x09HomeData} />
@@ -107,6 +111,14 @@ const x09HomeData = {
   iconPlus: "/img/plus-2-512-4@2x.png",
   iconUser: "/img/image-14@2x.png",
   groupProps: group2Data,
+};
+
+const RequestInfoData1 = {
+  sname: "Service Name",
+  sdate: "Date (MM/DD/YYYY)",
+  loc: "Location",
+  desc: "Description",
+  icon: "/img/transportation.png",
 };
 
 const group4Data = {
