@@ -7,16 +7,10 @@
 }
 
 .container-center-horizontal {
-  pointer-events: none;
-  width: 100%;
-  flex-direction: row;
+  flex-grow: 1;
   justify-content: center;
+  align-items: center;
   display: flex;
-}
-
-.container-center-horizontal > * {
-  pointer-events: auto;
-  flex-shrink: 0;
 }
 
 input:focus {
@@ -194,7 +188,7 @@ input:focus {
   margin-top: 175px;
 }
 
-.x11-reqeuest-posted {
+.x08-verification-complete {
   background-color: var(--white);
   height: 812px;
   flex-direction: column;
@@ -203,61 +197,79 @@ input:focus {
   position: relative;
 }
 
-.group-8831 {
-  flex-direction: column;
-  align-items: center;
-  margin-top: 176px;
-  margin-left: 24px;
+.center {
+  width: 100%;
+  margin-bottom: 200px;
+  margin-right: 2000px;
   display: flex;
 }
 
-.title {
-  letter-spacing: 0;
-  min-height: 36px;
-  min-width: 100px;
-  text-align: center;
-  white-space: nowrap;
-  margin-top: 0%;
-  margin-right: 0%;
-  line-height: 36px;
+.group-8831-1 {
+  height: 288px;
+  min-width: 216px;
+  align-items: flex-end;
+  margin-top: 176px;
+  margin-left: 3px;
+  display: flex;
 }
 
-.center2 {
-  vertical-align: middle;
-  margin-right: 80px;
+.screen {
+  width: 80%;
 }
 
-.center1 {
-  vertical-align: middle;
-  margin-left: -90px;
+.overlap-group1-2 {
+  height: 227px;
+  width: 214px;
+  margin-bottom: 100px;
+  margin-right: 70px;
+  position: relative;
 }
 
-.logo-1 {
+.logo-1-1 {
   height: 181px;
-  align-items: center;
-  margin-top: 10px;
-  margin-right: 3px;
-}
-
-.group-16 {
-  width: 50%;
-  margin-bottom: 7%;
-  margin-right: 6%;
+  width: 200px;
+  margin-top: 70px;
   position: absolute;
+  top: 46px;
+  left: 7px;
 }
 
-.overlap-group {
+span {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.number-verified-seccessfully {
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 36px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.group-16-1 {
+  cursor: pointer;
+  min-width: 317px;
+  align-items: flex-start;
+  margin-top: 156px;
+  margin-left: 2px;
+  display: flex;
+}
+
+.overlap-group-2 {
   background-color: var(--blue-jeans);
   height: 52px;
   min-width: 315px;
   border-radius: 8px;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 25px;
   padding: 0 136px;
   display: flex;
 }
 
-.login {
+.login-3 {
   letter-spacing: 0;
   min-height: 24px;
   min-width: 42px;
@@ -471,6 +483,10 @@ input:focus {
   margin-top: 176px;
   margin-left: 3px;
   display: flex;
+}
+
+.screen {
+  width: 80%;
 }
 
 .overlap-group1-2 {

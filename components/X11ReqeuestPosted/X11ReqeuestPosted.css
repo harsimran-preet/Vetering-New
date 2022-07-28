@@ -1,4 +1,4 @@
-.x11-reqeuest-posted {
+.x08-verification-complete {
   align-items: center;
   background-color: var(--white);
   display: flex;
@@ -6,50 +6,66 @@
   height: 812px;
   position: relative;
 }
-
-.group-8831 {
-  align-items: center;
+.center {
+  margin-right: 2000px;
   display: flex;
-  flex-direction: column;
-  margin-left: 24px;
+  width: 100%;
+  margin-bottom: 200px;
+}
+.group-8831-1 {
+  align-items: flex-end;
+  display: flex;
+  height: 288px;
+  margin-left: 3px;
   margin-top: 176px;
+  min-width: 216px;
+}
+.screen {
+  width: 80%;
 }
 
-.title {
+.overlap-group1-2 {
+  height: 227px;
+  margin-bottom: -155px;
+  position: relative;
+  width: 214px;
+  margin-right: 70px;
+  margin-bottom: 100px;
+}
+
+.logo-1-1 {
+  height: 181px;
+  left: 7px;
+  position: absolute;
+  top: 46px;
+  width: 200px;
+  margin-top: 70px;
+}
+
+span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.number-verified-seccessfully {
+  left: 0;
   letter-spacing: 0;
   line-height: 36px;
-  margin-right: 0%;
-  margin-top: 0%;
-  min-height: 36px;
-  min-width: 100px;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.center2 {
-  vertical-align: middle;
-  margin-right: 80px;
-}
-.center1 {
-  vertical-align: middle;
-  margin-left: -90px;
-}
-
-.logo-1 {
-  height: 181px;
-  margin-right: 3px;
-  margin-top: 10px;
-  align-items: center;
-}
-
-.group-16 {
   position: absolute;
-  width: 50%;
-  margin-bottom: 7%;
-  margin-right: 6%;
+  text-align: center;
+  top: 0;
 }
 
-.overlap-group {
+.group-16-1 {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  margin-left: 2px;
+  margin-top: 156px;
+  min-width: 317px;
+}
+
+.overlap-group-2 {
   align-items: center;
   background-color: var(--blue-jeans);
   border-radius: 8px;
@@ -58,9 +74,10 @@
   justify-content: flex-end;
   min-width: 315px;
   padding: 0 136px;
+  margin-right: 25px;
 }
 
-.login {
+.login-3 {
   letter-spacing: 0;
   line-height: 24px;
   min-height: 24px;

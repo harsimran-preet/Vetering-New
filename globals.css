@@ -3,24 +3,16 @@
 /* The following line is used to measure usage of this code in production. For more info see our usage billing page */
 @import url("https://px.animaapp.com/62c48d3431193bed90ee534a.62c4741e05d7b84d6403bce5.ybTJ6Qv.rcp.png");
 
-
-
 .screen a {
   display: contents;
   text-decoration: none;
 }
 
 .container-center-horizontal {
+  flex-grow: 1;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  pointer-events: none;
-  width: 100%;
-}
-
-.container-center-horizontal > * {
-  flex-shrink: 0;
-  pointer-events: auto;
+  align-items: center;
 }
 
 input:focus {

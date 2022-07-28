@@ -20,6 +20,9 @@
   margin-top: 176px;
   min-width: 216px;
 }
+.screen {
+  width: 80%;
+}
 
 .overlap-group1-2 {
   height: 227px;

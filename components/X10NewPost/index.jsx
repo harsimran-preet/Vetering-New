@@ -35,79 +35,77 @@ function X10NewPost(props) {
 
   return (
     <div className="container-center-horizontal">
-      <div className="x10-new-post screen">
-        <div className="overlap-group4-3">
-          <div className="flex-row-4">
-            <div className="try poppins-medium-daintree-24px">New Post</div>
-          </div>
-          <div className="overlap-group5-3">
-            <Avatar
-              size="xxl"
-              src="https://i.pravatar.cc/150?u=a042581f4e25056704b"
-              color="gradient"
-              bordered
-            />
-          </div>
-          <div>
-            <Box
-              sx={{
-                m: 4,
-                width: 360,
-                maxWidth: "100%",
-              }}
-            >
-              <TextField
-                id="filled-basic"
-                fullWidth
-                label="Location"
-                variant="filled"
-              />
-            </Box>
-            <Box
-              sx={{
-                m: 4,
-                width: 360,
-                maxWidth: "100%",
-              }}
-            >
-              <TextField
-                id="filled-multiline-static"
-                label="Description"
-                multiline
-                rows={6}
-                fullWidth
-                defaultValue=""
-                variant="filled"
-              />
-            </Box>
-            <FormControl variant="filled" sx={{ m: 4, minWidth: 360 }}>
-              <InputLabel id="demo-simple-select-filled-label">
-                Service Select
-              </InputLabel>
-              <Select
-                labelId="demo-simple-select-filled-label"
-                id="demo-simple-select-filled"
-                value={age}
-                onChange={handleChange}
-              >
-                <MenuItem value="">
-                  <em>None</em>
-                </MenuItem>
-                <MenuItem value={10}>Landscaping</MenuItem>
-                <MenuItem value={20}>Food</MenuItem>
-                <MenuItem value={30}>Transportation</MenuItem>
-                <MenuItem value={10}>Dumpster Run</MenuItem>
-                <MenuItem value={20}>Moving</MenuItem>
-                <MenuItem value={30}>Other</MenuItem>
-              </Select>
-            </FormControl>
-          </div>
-          <div className="button-container">
-            <Button />
-            <Button2 />
-          </div>
-          <div className="home-indicator-8"></div>
+      <div className="overlap-group4-3">
+        <div className="flex-row-4">
+          <div className="try poppins-medium-daintree-24px">New Post</div>
         </div>
+        <div className="overlap-group5-3">
+          <Avatar
+            size="xxl"
+            src="https://i.pravatar.cc/150?u=a042581f4e25056704b"
+            color="gradient"
+            bordered
+          />
+        </div>
+        <div>
+          <Box
+            sx={{
+              m: 4,
+              width: 360,
+              maxWidth: "100%",
+            }}
+          >
+            <TextField
+              id="filled-basic"
+              fullWidth
+              label="Location"
+              variant="filled"
+            />
+          </Box>
+          <Box
+            sx={{
+              m: 4,
+              width: 360,
+              maxWidth: "100%",
+            }}
+          >
+            <TextField
+              id="filled-multiline-static"
+              label="Description"
+              multiline
+              rows={6}
+              fullWidth
+              defaultValue=""
+              variant="filled"
+            />
+          </Box>
+          <FormControl variant="filled" sx={{ m: 4, minWidth: 360 }}>
+            <InputLabel id="demo-simple-select-filled-label">
+              Service Select
+            </InputLabel>
+            <Select
+              labelId="demo-simple-select-filled-label"
+              id="demo-simple-select-filled"
+              value={age}
+              onChange={handleChange}
+            >
+              <MenuItem value="">
+                <em>None</em>
+              </MenuItem>
+              <MenuItem value={10}>Landscaping</MenuItem>
+              <MenuItem value={20}>Food</MenuItem>
+              <MenuItem value={30}>Transportation</MenuItem>
+              <MenuItem value={10}>Dumpster Run</MenuItem>
+              <MenuItem value={20}>Moving</MenuItem>
+              <MenuItem value={30}>Other</MenuItem>
+            </Select>
+          </FormControl>
+        </div>
+        <div className="button-container">
+          <Button />
+          <Button2 />
+        </div>
+        <div className="home-indicator-8"></div>
       </div>
     </div>
   );

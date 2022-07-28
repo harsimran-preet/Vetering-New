@@ -1,15 +1,12 @@
-import { Button, Container } from "@nextui-org/react";
-import confetti from "canvas-confetti";
 import React from "react";
 import { Link } from "react-router-dom";
+import confetti from "canvas-confetti";
 import Group from "../Group";
 import BarsHomeIndicatorIPhoneLightPortrai from "../BarsHomeIndicatorIPhoneLightPortrai";
 import "./X11ReqeuestPosted.css";
-import { Button } from "react-bootstrap";
-import { alignPropType } from "react-bootstrap/esm/types";
 
-function X11ReqeuestPosted(props) {
-  const { title, login } = props;
+function X08VerificationComplete(props) {
+  const { numberVerifiedSeccessfully, login } = props;
   var duration = 3 * 1000;
   var animationEnd = Date.now() + duration;
   var defaults = { startVelocity: 30, spread: 80, ticks: 60, zIndex: 0 };
@@ -42,26 +39,30 @@ function X11ReqeuestPosted(props) {
       );
     }, 250);
   };
+
   return (
     <div className="container-center-horizontal">
-      <div className="x11-reqeuest-posted screen">
-        <Group />
-        <div className="center2 group-8831">
-          <h1 className="poppins-medium-daintree-26px">{title}</h1>
+      <div className="x08-verification-complete screen">
+        <div className="group-8831-1">
+          <div className="overlap-group1-2">
+            <img className="logo-1-1" src="/img/logo-1-1@2x.svg" />
+            <div className="poppins-medium-daintree-26px">
+              <span>Request Posted</span>
+            </div>
+          </div>
         </div>
-        <img class="center2" src="/img/logo-1@2x.svg" />
         <Link to="/09-home">
-          <div className="group-16">
-            <div className="overlap-group">
-              <div className="login poppins-medium-white-14px">{login}</div>
+          <div className="group-16-1">
+            <div className="overlap-group-2">
+              <div className="login-3 poppins-medium-white-14px">{login}</div>
             </div>
           </div>
         </Link>
-        <body onLoad={handleConfetti()}></body>
         <BarsHomeIndicatorIPhoneLightPortrai />
       </div>
+      <body onLoad={handleConfetti()}></body>
     </div>
   );
 }
 
-export default X11ReqeuestPosted;
+export default X08VerificationComplete;

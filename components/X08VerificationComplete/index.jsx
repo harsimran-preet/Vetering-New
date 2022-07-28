@@ -43,7 +43,6 @@ function X08VerificationComplete(props) {
   return (
     <div className="container-center-horizontal">
       <div className="x08-verification-complete screen">
-        <Group />
         <div className="group-8831-1">
           <div className="overlap-group1-2">
             <img className="logo-1-1" src="/img/logo-1-1@2x.svg" />
