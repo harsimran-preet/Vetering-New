@@ -7,7 +7,6 @@ import Link from "react-router-dom";
 import "./RequestInfo.css";
 import { Avatar, Grid } from "@nextui-org/react";
 import { deepOrange } from "@mui/material/colors";
-import Food from "./food.png";
 import Button from "@mui/material/Button";
 import HomeIcon from "@mui/icons-material/Home";
 import SendIcon from "@mui/icons-material/Update";
@@ -27,7 +26,7 @@ function RequestInfo(props) {
           <div className="try poppins-medium-daintree-24px">{sname}</div>
         </div>
         <div className="overlap-group5-3">
-          <Avatar size="xxl" src={Food} color="gradient" bordered squared />
+          <Avatar size="xxl" src={icon} color="gradient" bordered squared />
         </div>
         <div>
           <Box
@@ -41,7 +40,7 @@ function RequestInfo(props) {
               id="filled-basic"
               fullWidth
               label="Service Date"
-              defaultValue="Date (MM/DD/YYYY)"
+              defaultValue={sdate}
               variant="filled"
             />
           </Box>
@@ -56,7 +55,7 @@ function RequestInfo(props) {
               id="filled-basic"
               fullWidth
               label="Location"
-              defaultValue="Here is the location,CA"
+              defaultValue={loc}
               variant="filled"
             />
           </Box>
@@ -70,7 +69,7 @@ function RequestInfo(props) {
             <TextField
               id="filled-multiline-static"
               label="Description"
-              defaultValue="Here is the description for the service requested"
+              defaultValue={desc}
               multiline
               rows={6}
               fullWidth

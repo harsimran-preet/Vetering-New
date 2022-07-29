@@ -14,6 +14,9 @@ import X06SignUpOffender from "./components/X06SignUpOffender";
 import PostCompnent from "./components/PostComponent";
 import CardComponent from "./components/CardComponent";
 import RequestInfo from "./components/RequestInfo";
+import dumprun from "./serviceicons/dumprun.png";
+import food from "./serviceicons/food.png";
+import transportation from "./serviceicons/transportation.png";
 
 function App() {
   return (
@@ -24,6 +27,13 @@ function App() {
         </Route>
         <Route path="/request-info1">
           <RequestInfo {...RequestInfoData1} />
+          <CardComponent />
+        </Route>
+        <Route path="/request-info2">
+          <RequestInfo {...RequestInfoData2} />
+        </Route>
+        <Route path="/request-info3">
+          <RequestInfo {...RequestInfoData3} />
         </Route>
         <Route path="/09-home">
           <X09Home {...x09HomeData} />
@@ -114,11 +124,25 @@ const x09HomeData = {
 };
 
 const RequestInfoData1 = {
-  sname: "Service Name",
-  sdate: "Date (MM/DD/YYYY)",
-  loc: "Location",
+  sname: "Dumpster Run",
+  sdate: "Date (08/01/2022)",
+  loc: "1023 Leff Street, SLO",
+  desc: "I need help to throw out some old furniture from my house, preferably after 12pm.",
+  icon: dumprun,
+};
+const RequestInfoData2 = {
+  sname: "Food",
+  sdate: "Date (07/31/2022)",
+  loc: "1708 Beach Street, SLO ",
+  desc: "I need help get food delivered from Sally Loos to my house",
+  icon: food,
+};
+const RequestInfoData3 = {
+  sname: "Transportation",
+  sdate: "Date (07/30/2022)",
+  loc: "502 Buchon Street, SLO",
   desc: "Description",
-  icon: "/img/transportation.png",
+  icon: transportation,
 };
 
 const group4Data = {

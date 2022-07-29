@@ -1,5 +1,9 @@
 import { Card, Grid, Text, Link } from "@nextui-org/react";
 import Link1 from "react-router-dom/Link";
+import dumprun from "../serviceicons/dumprun.png";
+import transportation from "../serviceicons/transportation.png";
+import food from "../serviceicons/food.png";
+
 export default function App() {
   const Cardcomp = ({ servicename, date, photo, acolor }) => {
     return (
@@ -41,26 +45,26 @@ export default function App() {
       <Grid>
         <Link1 to="/request-info1">
           <Cardcomp
-            servicename="Service Name"
-            date="Date (MM/DD/YYYY)"
-            photo="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+            servicename="Dumpster Run"
+            date="Date (08/01/2022)"
+            photo={dumprun}
             acolor="white"
           />
         </Link1>
       </Grid>
       <Grid>
         <Cardcomp
-          servicename="Service Name"
-          date="Date (MM/DD/YYYY)"
-          photo="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+          servicename="Food"
+          date="Date (07/31/2022)"
+          photo={food}
           acolor="#FFED01"
         />
       </Grid>
       <Grid>
         <Cardcomp
-          servicename="Service Name"
-          date="Date (MM/DD/YYYY)"
-          photo="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
+          servicename="Transportation"
+          date="Date (07/30/2022)"
+          photo={transportation}
           acolor="rgb(30, 215, 96)"
         />
       </Grid>
