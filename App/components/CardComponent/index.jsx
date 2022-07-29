@@ -53,20 +53,24 @@ export default function App() {
         </Link1>
       </Grid>
       <Grid>
-        <Cardcomp
-          servicename="Food"
-          date="Date (07/31/2022)"
-          photo={food}
-          acolor="#FFED01"
-        />
+        <Link1 to="/request-info2">
+          <Cardcomp
+            servicename="Food"
+            date="Date (07/31/2022)"
+            photo={food}
+            acolor="#FFED01"
+          />
+        </Link1>
       </Grid>
       <Grid>
-        <Cardcomp
-          servicename="Transportation"
-          date="Date (07/30/2022)"
-          photo={transportation}
-          acolor="rgb(30, 215, 96)"
-        />
+        <Link1 to="/request-info3">
+          <Cardcomp
+            servicename="Transportation"
+            date="Date (07/30/2022)"
+            photo={transportation}
+            acolor="rgb(30, 215, 96)"
+          />
+        </Link1>
       </Grid>
     </Grid.Container>
   );

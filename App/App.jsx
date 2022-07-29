@@ -27,7 +27,6 @@ function App() {
         </Route>
         <Route path="/request-info1">
           <RequestInfo {...RequestInfoData1} />
-          <CardComponent />
         </Route>
         <Route path="/request-info2">
           <RequestInfo {...RequestInfoData2} />
@@ -129,12 +128,14 @@ const RequestInfoData1 = {
   loc: "1023 Leff Street, SLO",
   desc: "I need help to throw out some old furniture from my house, preferably after 12pm.",
   icon: dumprun,
+  status: "waiting for volunteer",
 };
 const RequestInfoData2 = {
   sname: "Food",
   sdate: "Date (07/31/2022)",
   loc: "1708 Beach Street, SLO ",
   desc: "I need help get food delivered from Sally Loos to my house",
+  status: "Volunteer interested",
   icon: food,
 };
 const RequestInfoData3 = {
@@ -143,6 +144,7 @@ const RequestInfoData3 = {
   loc: "502 Buchon Street, SLO",
   desc: "Description",
   icon: transportation,
+  status: "Volunteer Found",
 };
 
 const group4Data = {

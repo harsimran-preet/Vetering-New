@@ -13,7 +13,7 @@ import SendIcon from "@mui/icons-material/Update";
 import Stack from "@mui/material/Stack";
 
 function RequestInfo(props) {
-  const { sname, sdate, loc, desc, icon } = props;
+  const { sname, sdate, loc, desc, icon, status } = props;
   const [age, setAge] = React.useState("");
   const handleChange = (event, SelectChangeEvent) => {
     setAge(event.target.value);
@@ -28,6 +28,8 @@ function RequestInfo(props) {
         <div className="overlap-group5-3">
           <Avatar size="xxl" src={icon} color="gradient" bordered squared />
         </div>
+
+        <h6> Status: {status}</h6>
         <div>
           <Box
             sx={{
