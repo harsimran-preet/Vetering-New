@@ -112,7 +112,7 @@ const group2Data = {
 };
 
 const x09HomeData = {
-  place: "Home",
+  place: "HOME",
   login1: "My Inbox",
   login2: "Request Services",
   vetering15: "/img/vetering--1--5@2x.png",
@@ -152,7 +152,7 @@ const group4Data = {
 };
 
 const x13ProfileData = {
-  profile: "Profile",
+  profile: "PROFILE",
   jensonCarr: "Jenson Carr",
   place: "Veteran",
   login1: "View Upcoming Requests",
@@ -164,7 +164,7 @@ const x13ProfileData = {
 };
 
 const x02SignInData = {
-  signIn: "Sign in",
+  signIn: "SIGN IN",
   x39908191: "/img/3990819-1@2x.png",
   place: "Welcome",
   phoneNotch: "/img/phone-notch@3x.png",
@@ -233,7 +233,7 @@ const fab2Data = {
 };
 
 const x10NewPostData = {
-  newPost: "New Post",
+  newPost: "NEW POST",
   inputType1: "text",
   inputPlaceholder1: "Job Type:",
   inputType2: "text",

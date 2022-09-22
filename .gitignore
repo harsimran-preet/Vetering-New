@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 node_modules
 .parcel-cache
 .expo
 .git
 .gitattributes
 .gitignore
-=======
-App/node_modules
-App/.parcel-cache
->>>>>>> 48225b613f7a7b248a0e2da71ba12218b1711636

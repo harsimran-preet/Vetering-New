@@ -37,7 +37,7 @@ function X10NewPost(props) {
     <div className="container-center-horizontal">
       <div className="overlap-group4-3">
         <div className="flex-row-4">
-          <div className="try poppins-medium-daintree-24px">New Post</div>
+          <div className="try poppins-medium-daintree-24px">NEW POST</div>
         </div>
         <div className="overlap-group5-3">
           <Avatar

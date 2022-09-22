@@ -1,0 +1,105 @@
+.sign-up-info {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: 33px;
+  min-height: 262px;
+  width: 315px;
+}
+
+.overlap-group-11 {
+  align-items: center;
+  background-color: var(--zumthor);
+  border-radius: 7px;
+  display: flex;
+  height: 52px;
+  min-width: 315px;
+  padding: 0 15px;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+}
+
+.first-name {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 15px;
+  padding: 0;
+  white-space: nowrap;
+  width: 250px;
+}
+
+.first-name::placeholder,
+.last-name::placeholder,
+.email-address::placeholder,
+.mobile-number-1::placeholder {
+  color: #5c697f99;
+}
+
+.sign-up-info-item {
+  align-items: center;
+  background-color: var(--zumthor);
+  border-radius: 7px;
+  display: flex;
+  height: 52px;
+  margin-top: 18px;
+  min-width: 315px;
+  padding: 0 15px;
+}
+
+.last-name {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 15px;
+  padding: 0;
+  white-space: nowrap;
+  width: 250px;
+}
+
+.email-address {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 15px;
+  padding: 0;
+  white-space: nowrap;
+  width: 250px;
+}
+
+.overlap-group3-5 {
+  align-items: center;
+  background-color: var(--zumthor);
+  border-radius: 7px;
+  display: flex;
+  height: 52px;
+  margin-top: 18px;
+  min-width: 315px;
+  padding: 0 14px;
+}
+
+.phone-notch-1 {
+  height: 22px;
+  width: 22px;
+}
+
+.mobile-number-1 {
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 14px;
+  padding: 0;
+  white-space: nowrap;
+  width: 250px;
+}

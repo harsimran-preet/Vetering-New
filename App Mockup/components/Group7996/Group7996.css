@@ -1,0 +1,45 @@
+.group-7-1 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 2.0px;
+  margin-top: 21px;
+  min-width: 317px;
+}
+
+.overlap-group-12 {
+  align-items: center;
+  background-color: var(--zumthor);
+  border-radius: 7px;
+  display: flex;
+  height: 52px;
+  min-width: 315px;
+  padding: 13px 20px;
+}
+
+.group-7976-1 {
+  height: 17px;
+  margin-top: 1.0px;
+  width: 14px;
+}
+
+.password-1 {
+  align-self: flex-end;
+  background-color: transparent;
+  border: 0;
+  height: 24px;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 15px;
+  padding: 0;
+  white-space: nowrap;
+  width: 68px;
+}
+
+.password-1::placeholder {
+  color: #5c697f99;
+}
+
+.group-7-1.group-7 .password-1 {
+  width: 128px;
+}
+

@@ -1,0 +1,125 @@
+.x01-welcome {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  width: 0px;
+}
+
+.overlap-group3-4 {
+  height: 812px;
+  position: relative;
+  width: 375px;
+}
+
+.screen {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  height: 812px;
+  justify-content: flex-end;
+  left: 0;
+  min-width: 375px;
+  padding: 7px 119px;
+  position: absolute;
+  top: 0;
+}
+
+.home-indicator-7 {
+  background-color: var(--black);
+  border-radius: 100px;
+  height: 7px;
+  width: 136px;
+}
+
+.long-button {
+  align-items: flex-start;
+  background-color: var(--blue-jeans);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  height: 52px;
+  justify-content: flex-end;
+  left: 31px;
+  min-width: 315px;
+  padding: 13px 109px;
+  position: absolute;
+  top: 498px;
+}
+
+.login-7 {
+  letter-spacing: 0;
+  line-height: 24px;
+  min-height: 24px;
+  min-width: 95px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.overlap-group-7 {
+  align-items: center;
+  background-color: var(--blue-jeans);
+  border-radius: 8px;
+  display: flex;
+  height: 52px;
+  justify-content: flex-end;
+  left: 30px;
+  min-width: 315px;
+  padding: 0 103px;
+  position: absolute;
+  top: 566px;
+}
+
+.login-8 {
+  letter-spacing: 0;
+  line-height: 24px;
+  min-height: 24px;
+  min-width: 107px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.overlap-group1-5 {
+  height: 240px;
+  left: 67px;
+  position: absolute;
+  top: 194px;
+  width: 240px;
+}
+
+.vector-7 {
+  height: 32px;
+  left: 0;
+  position: absolute;
+  top: 208px;
+  width: 240px;
+}
+
+.rectangle-2145-2 {
+  background-color: var(--zumthor);
+  border-radius: 7px;
+  height: 209px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 240px;
+}
+
+.our-goal-is-to-conne {
+  left: 13px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 52px;
+  width: 215px;
+}
+
+.vetering {
+  left: 132px;
+  letter-spacing: 0;
+  line-height: 36px;
+  position: absolute;
+  text-align: center;
+  top: 48px;
+  white-space: nowrap;
+}

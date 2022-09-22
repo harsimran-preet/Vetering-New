@@ -1,0 +1,101 @@
+.x06-sign-up-offender {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  margin-right: 100px;
+}
+
+.overlap-group3-6 {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  min-height: 812px;
+  padding: 7px 0;
+  width: 375px;
+}
+
+.sign-up-1 {
+  letter-spacing: 0;
+  line-height: 36px;
+  margin-left: 2px;
+  margin-top: 41px;
+  min-height: 36px;
+  min-width: 91px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.group-container-2 {
+  height: 240px;
+  margin-right: 1px;
+  margin-top: 110px;
+  position: relative;
+  width: 240px;
+}
+
+.overlap-group1-8 {
+  height: 240px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 240px;
+}
+
+.vector-11 {
+  height: 32px;
+  left: 0;
+  position: absolute;
+  top: 208px;
+  width: 240px;
+}
+
+.rectangle-2145-5 {
+  background-color: var(--zumthor);
+  border-radius: 7px;
+  height: 209px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 240px;
+}
+
+.our-records-show-tha {
+  left: 9px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 87px;
+  width: 222px;
+}
+
+.overlap-group-14 {
+  align-items: center;
+  background-color: var(--blue-jeans);
+  border-radius: 8px;
+  display: flex;
+  height: 52px;
+  justify-content: flex-end;
+  margin-top: 60px;
+  min-width: 315px;
+  padding: 0 128px;
+}
+
+.login-12 {
+  letter-spacing: 0;
+  line-height: 24px;
+  min-height: 24px;
+  min-width: 58px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.home-indicator-9 {
+  background-color: var(--black);
+  border-radius: 100px;
+  height: 7px;
+  margin-left: 1px;
+  margin-top: 252px;
+  width: 136px;
+}

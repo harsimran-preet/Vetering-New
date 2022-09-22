@@ -11,7 +11,7 @@ function X09HomeNew(props) {
     <div className="container-center-horizontal">
       <div className="overlap-group4">
         <div className="flex-row">
-          <h1 className="place poppins-medium-daintree-24px">{place}</h1>
+          <h1 className="place poppins-medium-daintree-24px">HOME</h1>
         </div>
         <div className="overlap-group2">
           <img
