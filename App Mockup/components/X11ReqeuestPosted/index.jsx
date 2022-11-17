@@ -41,25 +41,24 @@ function X08VerificationComplete(props) {
   };
 
   return (
-    <div className="container-center-horizontal">
-      <div className="x08-request-posted screen">
-        <div className="group-8831-1">
-          <div className="overlap-group1-2">
-            <img className="logo-1-1" src="/img/logo-1-1@2x.svg" />
-            <div className="poppins-medium-daintree-26px">
-              <span>Request Posted</span>
-            </div>
+    // <div className="container-center-horizontal">
+    <div className="x08-request-posted screen">
+      <div className="group-8831-1">
+        <div className="overlap-group1-2">
+          <img className="logo-1-1" src="/img/logo-1-1@2x.svg" />
+          <div className="poppins-medium-daintree-26px">
+            <span>Request Posted</span>
           </div>
         </div>
-        <Link to="/09-home1">
-          <div className="group-16-1">
-            <div className="overlap-group-2">
-              <div className="login-3 poppins-medium-white-14px">{login}</div>
-            </div>
-          </div>
-        </Link>
-        <BarsHomeIndicatorIPhoneLightPortrai />
       </div>
+      <Link to="/09-home1">
+        <div className="group-16-1">
+          <div className="overlap-group-2">
+            <div className="login-3 poppins-medium-white-14px">{login}</div>
+          </div>
+        </div>
+      </Link>
+      <BarsHomeIndicatorIPhoneLightPortrai />
       <body onLoad={handleConfetti()}></body>
     </div>
   );

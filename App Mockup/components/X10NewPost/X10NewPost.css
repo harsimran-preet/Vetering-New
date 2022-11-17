@@ -2,7 +2,7 @@
   align-items: flex-start;
   background-color: var(--white);
   display: flex;
-  height: 812px;
+  height: 712px;
 }
 
 .overlap-group4-3 {
@@ -155,12 +155,12 @@
   width: 275px;
 }
 
-.button-container {
+.button-container2 {
   align-items: flex-start;
   display: flex;
-  height: 51px;
-  margin-top: 133px;
+  margin-top: 11px;
   min-width: 303px;
+
   position: relative;
 }
 

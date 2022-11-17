@@ -21,7 +21,10 @@
 .ssn {
   margin-top: 10px;
 }
-
+.alertinfo {
+  width: 300px;
+  margin-bottom: 20px;
+}
 .overlap-group-10 {
   height: 24px;
   position: relative;

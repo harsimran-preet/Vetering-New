@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 import X11ReqeuestPosted from "./components/X11ReqeuestPosted";
+import AAHome from "./components/AAHome";
 import X11ReqeuestPosted1 from "./components/X11ReqeuestPosted1";
 import X11ReqeuestPosted2 from "./components/X11ReqeuestPosted2";
 import X09Home from "./components/X09Home";
@@ -25,6 +26,13 @@ import transportation from "./serviceicons/transportation.png";
 import X09Home2 from "./components/X09Home2";
 import X09Home3 from "./components/X09Home3";
 import X09Home4 from "./components/X09Home4";
+import AAHelp from "./components/aaHelp";
+import AAQuestions from "./components/aaQuestions";
+import AATutorials from "./components/aaTutorials";
+import TutComp from "./components/aatutorialcomp";
+import aaRequests from "./components/aaRequests";
+import AlertDialog from "./components/alertdialog";
+
 function App() {
   return (
     <Router>
@@ -38,11 +46,29 @@ function App() {
         <Route path="/11-reqeuest-posted2">
           <X11ReqeuestPosted2 title="Request Posted!" login="Home" />
         </Route>
+        <Route path="/aaquestions">
+          <AAQuestions />
+        </Route>
+        <Route path="/aarequests">
+          <aaRequests />
+        </Route>
+        <Route path="/aatutorials">
+          <AATutorials {...TutCompData1} />
+        </Route>
+        <Route path="/aatutcomp1">
+          <TutComp />
+        </Route>
         <Route path="/request-info1">
           <RequestInfo {...RequestInfoData1} />
         </Route>
         <Route path="/request-info11">
           <RequestInfo {...RequestInfoData11} />
+        </Route>
+        <Route path="/aahelp">
+          <AAHelp {...AAHelp} />
+        </Route>
+        <Route path="/aahome">
+          <AAHome {...AAHome} />
         </Route>
         <Route path="/request-info2">
           <RequestInfo {...RequestInfoData2} />
@@ -164,6 +190,16 @@ const x09HomeData = {
   iconUser: "/img/image-14@2x.png",
   groupProps: group2Data,
 };
+const TutCompData1 = {
+  place: "HOME",
+  login1: "My Inbox",
+  login2: "Request Services",
+  vetering15: "/img/vetering--1--5@2x.png",
+  iconHome: "/img/house-128-4@2x.png",
+  iconPlus: "/img/plus-2-512-4@2x.png",
+  iconUser: "/img/image-14@2x.png",
+  groupProps: group2Data,
+};
 
 const RequestInfoData1 = {
   sname: "Dumpster Run",
@@ -176,7 +212,7 @@ const RequestInfoData1 = {
   vphoto:
     "https://w7.pngwing.com/pngs/527/663/png-transparent-logo-person-user-person-icon-rectangle-photography-computer-wallpaper.png",
   rating: 0,
-  vdate: "Date: (MM/DD/YYYY)",
+  vdate: "The card will turn yellow in the home page for you to accept.",
 };
 const RequestInfoData11 = {
   sname: "Dumpster Run",

@@ -23,7 +23,7 @@ function X09HomeNew(props) {
             <Link to="/request-info2">
               <CardComp
                 servicename="Food"
-                date="Date (07/31/2022)"
+                date="No Volunteer Offers Yet"
                 photo={food}
                 acolor="white"
               />
@@ -31,7 +31,7 @@ function X09HomeNew(props) {
             <Link to="/request-info11">
               <CardComp
                 servicename="Dumpster Run"
-                date="Date (08/01/2022)"
+                date="Volunteer has offered to help"
                 photo={dumprun}
                 acolor="rgb(30, 215, 96)"
               />

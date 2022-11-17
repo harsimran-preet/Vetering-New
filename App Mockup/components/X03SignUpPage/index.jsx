@@ -4,6 +4,7 @@ import Fab from "../Fab";
 import SignUpInfo from "../SignUpInfo";
 import Select from "../Select";
 import DatePicker from "../DatePicker";
+import Alert from "@mui/material/Alert";
 import Group7996 from "../Group7996";
 import BarsHomeIndicatorIPhoneLightPortrai from "../BarsHomeIndicatorIPhoneLightPortrai";
 import "./X03SignUpPage.css";
@@ -37,6 +38,7 @@ class Showhide extends React.Component {
             <FormLabel id="demo-row-radio-buttons-group-label">
               Who are you?
             </FormLabel>
+
             <RadioGroup
               row
               aria-labelledby="demo-row-radio-buttons-group-label"
@@ -56,6 +58,12 @@ class Showhide extends React.Component {
 
         {value === "1" && (
           <div className="form-group column mb-3">
+            <Alert className="alertinfo" severity="info">
+              Your Social Security Number is not stored on our app and is solely
+              processed by the Veterans Affairs (USVA) to protect against stolen
+              valor. We want to return service to those who deserve it, and the
+              VA requires this information to confirm your Veteran status.
+            </Alert>
             <div className="overlap-group4-2">
               <img className="credit-card" src="/img/credit-card@2x.svg" />
               <input

@@ -21,7 +21,7 @@ function X09HomeNew(props) {
             <Link to="/request-info1">
               <CardComp
                 servicename="Dumpster Run"
-                date="Date (08/01/2022)"
+                date="No Volunteer Offers Yet"
                 photo={dumprun}
                 acolor="white"
               />

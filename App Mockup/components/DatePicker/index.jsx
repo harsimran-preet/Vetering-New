@@ -12,12 +12,16 @@ function DatePicker() {
         bordered
         showToday
         allowClear
+        style={{
+          width: "100%",
+          backgroundColor: "rgb(237, 237, 237)",
+        }}
         picker="date"
-        size="middle"
+        size="large"
         status="default"
         disabled={false}
         format="MM/DD/YYYY"
-        placeholder="Date"
+        placeholder="Date of Job"
       />
     </div>
   );

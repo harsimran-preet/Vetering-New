@@ -38,11 +38,10 @@ function RequestInfo(props) {
         <div className="flex-row-4">
           <div className="try poppins-medium-daintree-24px">{sname}</div>
         </div>
-        <div className="overlap-group5-3">
+        {/* <div className="overlap-group5-3">
           <Avatar size="xxl" src={icon} color="gradient" bordered squared />
-        </div>
+        </div> */}
 
-        <h6> Status: {status}</h6>
         <div>
           <Box
             sx={{
@@ -51,6 +50,18 @@ function RequestInfo(props) {
               maxWidth: "100%",
             }}
           >
+            <h5> Status: {status}</h5>
+            <div className="margin">
+              <CardCompPerson
+                servicename={vname}
+                date={vdate}
+                photo={vphoto}
+                value={rating}
+                link1={link1}
+                link2={link2}
+                acolor="white"
+              />
+            </div>
             <TextField
               id="filled-basic"
               fullWidth
@@ -97,22 +108,12 @@ function RequestInfo(props) {
               width: 360,
               maxWidth: "100%",
             }}
-          >
-            <CardCompPerson
-              servicename={vname}
-              date={vdate}
-              photo={vphoto}
-              value={rating}
-              link1={link1}
-              link2={link2}
-              acolor="white"
-            />
-          </Box>
+          ></Box>
         </div>
-        <div className="button-container">
+        <div className="thebutton-container3">
           <Stack direction="row" spacing={2}>
             <a href="javascript:history.back()">
-              <Button variant="outlined" startIcon={<HomeIcon />}>
+              <Button size="large" variant="contained" startIcon={<HomeIcon />}>
                 Home
               </Button>
             </a>
