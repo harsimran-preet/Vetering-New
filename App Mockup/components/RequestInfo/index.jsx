@@ -26,6 +26,9 @@ function RequestInfo(props) {
     vdate,
     link1,
     link2,
+    hdate,
+    goto,
+    btnmessage,
   } = props;
   const [age, setAge] = React.useState("");
   const handleChange = (event, SelectChangeEvent) => {
@@ -50,7 +53,16 @@ function RequestInfo(props) {
               maxWidth: "100%",
             }}
           >
-            <h5> Status: {status}</h5>
+            <TextField
+              id="filled-basic"
+              fullWidth
+              label="Status"
+              defaultValue={status}
+              variant="outlined"
+            />
+            {/* <div className="center11">
+              <h5> Status: {status}</h5>
+            </div> */}
             <div className="margin">
               <CardCompPerson
                 servicename={vname}
@@ -59,6 +71,7 @@ function RequestInfo(props) {
                 value={rating}
                 link1={link1}
                 link2={link2}
+                btnmessage={btnmessage}
                 acolor="white"
               />
             </div>
@@ -67,6 +80,13 @@ function RequestInfo(props) {
               fullWidth
               label="Service Date"
               defaultValue={sdate}
+              variant="filled"
+            />
+            <TextField
+              id="filled-basic"
+              fullWidth
+              label="Hours of Service"
+              defaultValue={hdate}
               variant="filled"
             />
           </Box>
@@ -111,19 +131,17 @@ function RequestInfo(props) {
           ></Box>
         </div>
         <div className="thebutton-container3">
-          <Stack direction="row" spacing={2}>
-            <a href="javascript:history.back()">
-              <Button size="large" variant="contained" startIcon={<HomeIcon />}>
-                Home
-              </Button>
-            </a>
+          <a href={goto}>
+            <Button size="large" variant="contained" startIcon={<HomeIcon />}>
+              Home
+            </Button>
+          </a>
 
-            {/* <Button variant="contained" startIcon={<SendIcon />}>
+          {/* <Button variant="contained" startIcon={<SendIcon />}>
               Update
             </Button> */}
-          </Stack>
         </div>
-        <div className="home-indicator-8"></div>
+        {/* <div className="home-indicator-8"></div> */}
       </div>
     </div>
   );

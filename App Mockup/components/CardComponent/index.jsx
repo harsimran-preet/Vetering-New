@@ -8,39 +8,37 @@ export default function CardComp(props) {
   const { servicename, date, photo, acolor } = props;
 
   return (
-    <Grid.Container direction="column" gap={1} justify="center">
-      <Card
-        isPressable
-        isHoverable
-        css={{
-          p: "$1",
-          fontFamily: "Arial",
-          mw: "400px",
-          backgroundColor: acolor,
-        }}
-      >
-        <Card.Header>
-          <img alt="nextui logo" src={photo} width="34px" height="34px" />
-          <Grid.Container css={{ pl: "$6" }}>
-            <Grid xs={12}>
-              <Text h5 css={{ lineHeight: "$xs" }}>
-                {servicename}
-              </Text>
-            </Grid>
-            <Grid xs={12}>
-              <Text css={{ color: "$accents8", fontFamily: "Arial" }}>
-                {date}
-              </Text>
-            </Grid>
-          </Grid.Container>
-        </Card.Header>
-        {/* <Card.Body css={{ py: "$2" }}>
+    <Card
+      isPressable
+      isHoverable
+      css={{
+        p: "$1",
+        fontFamily: "Arial",
+
+        backgroundColor: acolor,
+      }}
+    >
+      <Card.Header>
+        <img alt="nextui logo" src={photo} width="34px" height="34px" />
+        <Grid.Container css={{ pl: "$6" }}>
+          <Grid xs={12}>
+            <Text h5 css={{ lineHeight: "$xs" }}>
+              {servicename}
+            </Text>
+          </Grid>
+          <Grid xs={12}>
+            <Text css={{ color: "$accents8", fontFamily: "Arial" }}>
+              {date}
+            </Text>
+          </Grid>
+        </Grid.Container>
+      </Card.Header>
+      {/* <Card.Body css={{ py: "$2" }}>
           <Text>
             Make beautiful websites regardless of your design experience.
           </Text>
         </Card.Body> */}
-      </Card>
-    </Grid.Container>
+    </Card>
   );
 }
 // return (

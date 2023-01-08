@@ -110,7 +110,7 @@ function X03SignUpPage(props) {
             <div className="sign-up poppins-medium-daintree-16px">SIGN UP</div>
           </div>
         </div>
-        <div className="overlap-group5-3">
+        {/* <div className="overlap-group5-3">
           <Avatar
             size="xxl"
             src="https://i.pravatar.cc/150?u=a042581f4e25056704b"
@@ -118,7 +118,7 @@ function X03SignUpPage(props) {
             bordered
           />
           <Fab className="fab" />
-        </div>
+        </div> */}
         <SignUpInfo {...signUpInfoProps} />
         <div className="flex-row-3"></div>
         <div className="ssn">
@@ -156,8 +156,8 @@ function X03SignUpPage(props) {
             </div>
           </Link>
         </div>
-
-        <div className="overlap-group8">
+        {/* Falied login examples */}
+        {/* <div className="overlap-group8">
           <Link to="/sign-up-offender">
             <p className="already-an-user">
               <span className="poppins-normal-blue-jeans-14px">
@@ -174,7 +174,7 @@ function X03SignUpPage(props) {
               </span>
             </p>
           </Link>
-        </div>
+        </div> */}
         <BarsHomeIndicatorIPhoneLightPortrai
           className={barsHomeIndicatorIPhoneLightPortraiProps.className}
         />

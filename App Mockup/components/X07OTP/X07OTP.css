@@ -6,6 +6,7 @@
   height: 812px;
   position: relative;
   width: 375px;
+  background: #7b8698;
 }
 
 .group-8815 {
@@ -51,6 +52,7 @@
   text-align: center;
   white-space: nowrap;
   width: 120px;
+  color: white;
 }
 
 .undraw_message_sent_1030-1 {
@@ -86,10 +88,11 @@
   min-width: 101px;
   text-align: center;
   white-space: nowrap;
+  color: white;
 }
 
 .otp-has-been-sent-your-mobile-number {
-  color: var(--chicago);
+  color: white;
   font-family: var(--font-family-poppins);
   font-size: var(--font-size-s);
   font-weight: 400;

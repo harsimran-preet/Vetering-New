@@ -7,6 +7,9 @@
   padding: 10px;
   border: 5px solid #7b8698;
 }
+.grey {
+  background-color: #7b8698;
+}
 .rectangle-1 {
   position: absolute;
   left: 0%;
@@ -42,7 +45,8 @@
   bottom: 80.02%;
 
   background: #ffffff;
-  border: 5px solid #2c315e;
+  border: 3px solid black;
+  border-radius: 20px;
 }
 .rectangle-12 {
   position: absolute;
@@ -267,10 +271,10 @@
 }
 .insidetext3 {
   position: absolute;
-  left: 17.02%;
-  right: 10.43%;
-  top: 13.28%;
-  bottom: 80.62%;
+  left: 22.6%;
+  right: 12.55%;
+  top: 32.49%;
+  bottom: 23.21%;
 
   font-family: "Roboto";
   font-style: normal;
@@ -286,8 +290,8 @@
   position: absolute;
   left: 16.6%;
   right: 10.85%;
-  top: 25.12%;
-  bottom: 68.78%;
+  top: 5.12%;
+  bottom: 88.78%;
 
   font-family: "Roboto";
   font-style: normal;
@@ -297,4 +301,13 @@
   letter-spacing: 0.198201px;
 
   color: #000000;
+}
+.theimage {
+  margin-top: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 280px;
+  max-width: 280px;
 }

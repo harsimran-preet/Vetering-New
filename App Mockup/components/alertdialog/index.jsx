@@ -1,10 +1,12 @@
 import * as React from "react";
+import "./alert.css";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
+import { Card, Text } from "@nextui-org/react";
 
 export default function AlertDialog(props) {
   const { btitle, title, desc } = props;
@@ -20,20 +22,18 @@ export default function AlertDialog(props) {
 
   return (
     <div>
-      <Button
-        variant="outlined"
-        sx={{
-          width: 200,
-          padding: 1,
-          margin: 2,
-          color: "black",
-          backgroundColor: "white",
-          borderColor: "blue",
-        }}
-        onClick={handleClickOpen}
+      <Card
+        onPress={handleClickOpen}
+        isPressable
+        isHoverable
+        variant="bordered"
+        className="thescreen"
       >
-        {btitle}
-      </Button>
+        <Card.Body>
+          <Text>{btitle}</Text>
+        </Card.Body>
+      </Card>
+
       <Dialog
         open={open}
         onClose={handleClose}

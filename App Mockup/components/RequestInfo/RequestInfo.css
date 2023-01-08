@@ -10,14 +10,16 @@
 
 .overlap-group4-3 {
   align-items: center;
-  background-color: var(--white);
+  background-color: white;
   display: flex;
   flex-direction: column;
   min-height: 812px;
   padding: 7px 16px;
   width: 375px;
 }
-
+.center11 {
+  margin-left: 40px;
+}
 .flex-row-4 {
   align-items: flex-start;
   align-self: flex-end;
@@ -28,7 +30,7 @@
 }
 .try {
   align-items: center;
-  margin-right: 115px;
+  margin-right: 80px;
   font-size: 24px;
 }
 .new-post {
@@ -153,7 +155,7 @@
   align-items: flex-start;
   display: flex;
   height: 51px;
-  margin-left: 340px;
+  margin-left: 200px;
   margin-top: 11px;
   min-width: 303px;
   position: relative;

@@ -1,11 +1,12 @@
 .x03-sign-up-page {
   align-items: center;
   height: 1299px;
-  width: 1000px;
+  width: 400px;
   background-color: var(--white);
   display: flex;
   flex-direction: column;
   position: relative;
+  background: #7b8698;
 }
 
 .group-8815-1 {

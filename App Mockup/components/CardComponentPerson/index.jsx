@@ -7,7 +7,8 @@ import Rating from "@mui/material/Rating";
 import { Button } from "@nextui-org/react";
 
 export default function CardCompPerson(props) {
-  const { servicename, date, photo, acolor, value, link1, link2 } = props;
+  const { servicename, date, photo, acolor, value, link1, link2, btnmessage } =
+    props;
   return (
     <Grid.Container direction="column" gap={1} justify="center">
       <Card
@@ -33,15 +34,15 @@ export default function CardCompPerson(props) {
             </Grid>
           </Grid.Container>
         </Card.Header>
-        <Card.Body css={{ py: "$2" }}>
+        <Card.Body css={{ py: "$3" }}>
           <h6> {date}</h6>
           <Link1 to={link1}>
-            <Button>Message Now</Button>
+            <Button style={{ marginLeft: "70px" }}>{btnmessage}</Button>
           </Link1>
-          <h6></h6>
+          {/* <h6></h6>
           <Link1 to={link2}>
             <Button>Confirm</Button>
-          </Link1>
+          </Link1> */}
         </Card.Body>
       </Card>
     </Grid.Container>

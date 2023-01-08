@@ -16,68 +16,71 @@ import newreqlogo from "./add_task.png";
 
 export default function AAHome(props) {
   return (
-    <div className="background">
-      <div className="rectangle-1">
-        <div className="home">HOME</div>
-        <div className="profile">
-          <Avatar
-            alt="Remy Sharp"
-            src="https://ogden_images.s3.amazonaws.com/www.heraldstaronline.com/images/2018/11/11011123/HARRY-BUFFONE-WWII-WEB-557x840.jpg"
-            sx={{ width: 54, height: 54 }}
-          />
-        </div>
-        <div className="rectangle-5">
-          <div className="text-1">You have no requests right now!</div>
-          <div className="text-2">
-            Select <img src={add_task_ek2} />
-            &nbsp;Create Request in the lower right to see requests appear here
+    <div className="thegrey">
+      <div className="background">
+        <div className="rectangle-1">
+          <div className="home">HOME</div>
+          <div className="profile">
+            <Avatar
+              alt="Remy Sharp"
+              src="https://ogden_images.s3.amazonaws.com/www.heraldstaronline.com/images/2018/11/11011123/HARRY-BUFFONE-WWII-WEB-557x840.jpg"
+              sx={{ width: 54, height: 54 }}
+            />
           </div>
-          <div className="colorkey">
-            <Stack spacing={2}>
-              <Stack direction="row" spacing={2}>
-                <Avatar sx={{}}>
-                  <AccessTimeIcon />
-                </Avatar>
-                <h7>No Volunteer Offers Yet</h7>
+          <div className="rectangle-51">
+            <div className="text-1">You have no requests right now!</div>
+            <div className="text-2">
+              Select <img src={add_task_ek2} />
+              &nbsp;New Request in the lower right to see requests appear here
+            </div>
+            <div className="colorkey">
+              <Stack spacing={2}>
+                <Stack direction="row" spacing={2}>
+                  <Avatar sx={{}}>
+                    <AccessTimeIcon />
+                  </Avatar>
+                  <h7>No Volunteer Offers Yet</h7>
+                </Stack>
+                <Stack direction="row" spacing={2}>
+                  <Avatar sx={{ bgcolor: yellow[600] }}>
+                    <EmojiPeopleIcon />
+                  </Avatar>
+                  <h7>Volunteer has offered to help</h7>
+                </Stack>
+                <Stack direction="row" spacing={2}>
+                  <Avatar sx={{ bgcolor: green[500] }}>
+                    <HandshakeIcon />
+                  </Avatar>
+                  <h7>You have accepted a volunteer</h7>
+                </Stack>
               </Stack>
-              <Stack direction="row" spacing={2}>
-                <Avatar sx={{ bgcolor: yellow[600] }}>
-                  <EmojiPeopleIcon />
-                </Avatar>
-                <h7>Volunteer has offered to help</h7>
-              </Stack>
-              <Stack direction="row" spacing={2}>
-                <Avatar sx={{ bgcolor: green[500] }}>
-                  <HandshakeIcon />
-                </Avatar>
-                <h7>You have accepted a volunteer</h7>
-              </Stack>
-            </Stack>
+            </div>
           </div>
-        </div>
-        <div className="text-3">View All Request History-&#62;</div>
-        <div>
-          <Link to="/aahelp">
-            <div className="thebox11">
-              <div className="logos">
-                <img src={questionmark} />
+          <div className="text-33">View All Request History-&#62;</div>
+          <div>
+            <Link to="/aahelp">
+              <div className="thebox11">
+                <div className="logos">
+                  <img src={questionmark} />
+                </div>
+
+                <div className="text-4">HELP</div>
               </div>
-
-              <div className="text-4">HELP</div>
+            </Link>
+            <div className="thebox21">
+              <div className="logos1">
+                <img src={homelogo} />
+              </div>
+              <div className="text-4">HOME</div>
             </div>
-          </Link>
-          <div className="thebox21">
-            <div className="logos1">
-              <img src={homelogo} />
-            </div>
-            <div className="text-4">HOME</div>
-          </div>
-
-          <div className="thebox31">
-            <div className="logos2">
-              <img src={newreqlogo} />
-            </div>
-            <div className="text-4">NEW REQUEST</div>
+            <Link to="/aarequest">
+              <div className="thebox31">
+                <div className="logos2">
+                  <img src={newreqlogo} />
+                </div>
+                <div className="text-4">NEW REQUEST</div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,10 @@
 .aa {
   background: #7b8698;
 }
+p + p {
+  margin-top: 10px;
+}
+
 .background {
   position: relative;
   width: 470px;
@@ -163,46 +167,14 @@
 
   color: #000000;
 }
-.rectangle-62 {
+.thepositions {
   position: absolute;
   left: 8.3%;
   right: 8.3%;
-  top: 10.89%;
+  top: 14.89%;
   bottom: 75%;
-
-  background: #ffffff;
-  border-radius: 20px;
 }
-.rectangle-72 {
-  position: absolute;
-  left: 8.09%;
-  right: 8.51%;
-  top: 28.83%;
-  bottom: 57.06%;
 
-  background: #ffffff;
-  border-radius: 20px;
-}
-.rectangle-82 {
-  position: absolute;
-  left: 8.3%;
-  right: 8.3%;
-  top: 47.37%;
-  bottom: 38.52%;
-
-  background: #ffffff;
-  border-radius: 20px;
-}
-.rectangle-92 {
-  position: absolute;
-  left: 8.09%;
-  right: 8.51%;
-  top: 65.91%;
-  bottom: 19.98%;
-
-  background: #ffffff;
-  border-radius: 20px;
-}
 .insidetext {
   position: absolute;
   left: 13.62%;

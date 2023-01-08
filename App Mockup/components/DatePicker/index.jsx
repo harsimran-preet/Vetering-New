@@ -21,7 +21,7 @@ function DatePicker() {
         status="default"
         disabled={false}
         format="MM/DD/YYYY"
-        placeholder="Date of Job"
+        placeholder="Date of Birth"
       />
     </div>
   );

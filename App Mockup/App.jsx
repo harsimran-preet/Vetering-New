@@ -30,13 +30,25 @@ import AAHelp from "./components/aaHelp";
 import AAQuestions from "./components/aaQuestions";
 import AATutorials from "./components/aaTutorials";
 import TutComp from "./components/aatutorialcomp";
-import aaRequests from "./components/aaRequests";
 import AlertDialog from "./components/alertdialog";
+import AAnewrequests from "./components/aanewrequests";
+import RequestInfo1 from "./components/RequestInfo1";
+import AAHome1 from "./components/AAHome1";
+import AAHome2 from "./components/AAHome2";
+import AAHome3 from "./components/AAHome3";
+import sshot from "./IMG_1843.jpg";
 
 function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/aarequestposted1">
+          <X08VerificationComplete
+            title="Request Posted Successfully"
+            login="Home"
+            goto="/aahome1"
+          />
+        </Route>
         <Route path="/11-reqeuest-posted">
           <X11ReqeuestPosted title="Request Posted!" login="Home" />
         </Route>
@@ -49,26 +61,18 @@ function App() {
         <Route path="/aaquestions">
           <AAQuestions />
         </Route>
-        <Route path="/aarequests">
-          <aaRequests />
+        <Route path="/aarequest">
+          <AAnewrequests />
         </Route>
+
         <Route path="/aatutorials">
           <AATutorials {...TutCompData1} />
         </Route>
         <Route path="/aatutcomp1">
-          <TutComp />
+          <TutComp {...Tutpage} />
         </Route>
         <Route path="/request-info1">
-          <RequestInfo {...RequestInfoData1} />
-        </Route>
-        <Route path="/request-info11">
-          <RequestInfo {...RequestInfoData11} />
-        </Route>
-        <Route path="/aahelp">
-          <AAHelp {...AAHelp} />
-        </Route>
-        <Route path="/aahome">
-          <AAHome {...AAHome} />
+          <RequestInfo1 {...RequestInfoData1} />
         </Route>
         <Route path="/request-info2">
           <RequestInfo {...RequestInfoData2} />
@@ -76,6 +80,25 @@ function App() {
         <Route path="/request-info3">
           <RequestInfo {...RequestInfoData3} />
         </Route>
+        <Route path="/request-info11">
+          <RequestInfo {...RequestInfoData1} />
+        </Route>
+        <Route path="/aahelp">
+          <AAHelp {...AAHelp} />
+        </Route>
+        <Route path="/aahome">
+          <AAHome {...AAHome} />
+        </Route>
+        <Route path="/aahome1">
+          <AAHome1 {...AAHome} />
+        </Route>
+        <Route path="/aahome2">
+          <AAHome2 {...AAHome} />
+        </Route>
+        <Route path="/aahome3">
+          <AAHome3 {...AAHome} />
+        </Route>
+
         <Route path="/09-home">
           <X09Home {...x09HomeData} />
         </Route>
@@ -97,16 +120,12 @@ function App() {
         <Route path="/card-component">
           <CardComponent title="Card Component" />
         </Route>
+
         <Route path="/08-verification-complete">
           <X08VerificationComplete
-            numberVerifiedSeccessfully={
-              <React.Fragment>
-                Number Verified
-                <br />
-                seccessfully
-              </React.Fragment>
-            }
+            title="Number Verified Successfully"
             login="Home"
+            goto="/aahome"
           />
         </Route>
         <Route path="/13-profile">
@@ -200,12 +219,18 @@ const TutCompData1 = {
   iconUser: "/img/image-14@2x.png",
   groupProps: group2Data,
 };
+const Tutpage = {
+  title: "1. How to create a new service request?",
+  info: "Click the new request button in the bottom right hand corner",
+  img: sshot,
+  goto: "/aahome",
+};
 
 const RequestInfoData1 = {
   sname: "Dumpster Run",
-  sdate: "Date (08/01/2022)",
+  sdate: "Date (1/10/2023)",
   loc: "1023 Leff Street, SLO",
-  desc: "I need help to throw out some old furniture from my house, preferably after 12pm.",
+  desc: "I had my trees trimmed and need about 3 truck loads of branches hauled off to the dump. I have lopping shears and gloves for you to use. You'll need to bring a truck and I'll pay for the dump fees.",
   icon: dumprun,
   status: "waiting for volunteer",
   vname: "No one",
@@ -213,6 +238,41 @@ const RequestInfoData1 = {
     "https://w7.pngwing.com/pngs/527/663/png-transparent-logo-person-user-person-icon-rectangle-photography-computer-wallpaper.png",
   rating: 0,
   vdate: "The card will turn yellow in the home page for you to accept.",
+  goto: "/aahome2",
+  hdate: "2",
+};
+const RequestInfoData2 = {
+  sname: "Dumpster Run",
+  sdate: "Date (1/10/2023)",
+  loc: "1023 Leff Street, SLO",
+  desc: "I had my trees trimmed and need about 3 truck loads of branches hauled off to the dump. I have lopping shears and gloves for you to use. You'll need to bring a truck and I'll pay for the dump fees.",
+  icon: dumprun,
+  status: "Volunteer interested",
+  vname: "Jacob Williams",
+  vphoto:
+    "https://www.babseacle.org/wp-content/uploads/2018/09/portrait-square-10.jpg",
+  rating: 5,
+  vdate: "Available on (08/01/2022)",
+  goto: "/aahome3",
+  hdate: "2",
+  btnmessage: "Confirm",
+  link1: "/request-info3",
+};
+const RequestInfoData3 = {
+  sname: "Dumpster Run",
+  sdate: "Date (1/10/2023)",
+  loc: "1023 Leff Street, SLO",
+  desc: "I had my trees trimmed and need about 3 truck loads of branches hauled off to the dump. I have lopping shears and gloves for you to use. You'll need to bring a truck and I'll pay for the dump fees.",
+  icon: dumprun,
+  status: "Volunteer Assigned",
+  vname: "Jacob Williams",
+  vphoto:
+    "https://www.babseacle.org/wp-content/uploads/2018/09/portrait-square-10.jpg",
+  rating: 5,
+  vdate: "You have confirmed a volunteer for your job",
+  goto: "/aahome3",
+  hdate: "2",
+  btnmessage: "Call (510)-270-8237",
 };
 const RequestInfoData11 = {
   sname: "Dumpster Run",
@@ -229,7 +289,7 @@ const RequestInfoData11 = {
   link1: "09-home3",
   link2: "09-home3",
 };
-const RequestInfoData2 = {
+const RequestInfoData22 = {
   sname: "Food",
   sdate: "Date (07/31/2022)",
   loc: "1708 Beach Street, SLO ",
@@ -243,7 +303,7 @@ const RequestInfoData2 = {
   vdate: "Date: (MM/DD/YYYY)",
   icon: food,
 };
-const RequestInfoData3 = {
+const RequestInfoData33 = {
   sname: "Transportation",
   sdate: "Date (07/30/2022)",
   loc: "502 Buchon Street, SLO",
@@ -274,14 +334,14 @@ const x13ProfileData = {
 
 const x02SignInData = {
   signIn: "SIGN IN",
-  x39908191: "/img/3990819-1@2x.png",
+  x39908191: "./3990819-1@2x.png",
   place: "Welcome",
-  phoneNotch: "/img/phone-notch@3x.png",
+  phoneNotch: "./phone-notch@3x.png",
   inputType1: "number",
   inputPlaceholder1: "Mobile Number",
   inputType2: "password",
   inputPlaceholder2: "Password",
-  group7992: "/img/group-7992@1x.png",
+  group7992: "./img/group-7992@1x.png",
   login: "Create an Account",
 };
 
@@ -312,7 +372,7 @@ const barsHomeIndicatorIPhoneLightPortrai4Data = {
 };
 
 const x03SignUpPageData = {
-  size: "/img/size-1@2x.png",
+  size: "./img/size-1@2x.png",
   signUp: "Sign Up",
   gender: "Gender",
   inputType: "number",
